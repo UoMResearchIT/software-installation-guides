@@ -1,0 +1,8 @@
+Navigate to \Windows64\1 and run setup.exe.
+
+Documentation:
+\1\setup.exe
+
+Software:
+\Windows64\1\setup.exe
+TomEE / Websphere - ask Lee which?

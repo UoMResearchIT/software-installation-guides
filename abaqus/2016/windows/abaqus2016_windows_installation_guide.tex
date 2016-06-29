@@ -48,7 +48,7 @@
 	It's generally just a process of double-clicking on each setup.exe in turn and accepting the defaults, but some details are given below for key steps. 
 	
 	\subsection{Documentation}
-	Mount the documentation installer \path{Abaqus_fesafe_2016_documentation.iso}
+	Mount the iso file containing the documentation installer \path{Abaqus_fesafe_2016_documentation.iso}
 	Run this installer\\ \path{\1\DOC_SIMULIA_Abaqus_fe-safe\1\Abaqus_2016\setup.exe}\\	
 	Choose HTML and pdf
 	
@@ -64,20 +64,21 @@
 	
 	
 	\subsection{Services (solvers)}
+	Mount the iso file containing the Abaqus installers \path{Abaqus_2016_Win_Lin.iso}. This will show up as \path{Abaqus2016}.
 	Run the installer
 	% Full paths for downloaded media are longer - I only archived the relevant folders for ESD,
 	% removing the leading "AM_SIM_Abaqus_Extend.AllOS\1"
 	%\AM_SIM_Abaqus_Extend.AllOS\1\3DEXPERIENCE_AbaqusSolver\Windows64\1\setup.exe
 	
-	\path{\3DEXPERIENCE_AbaqusSolver\Windows64\1\setup.exe}
+	\path{Abaqus2016\3DEXPERIENCE_AbaqusSolver\Windows64\1\setup.exe}
 	
 	\subsection{CAA developer}
 	Run the installer
-	\path{\CAA_3DEXPERIENCE_AbaqusSolver\Windows64\1\setup.exe}
+	\path{Abaqus2016\CAA_3DEXPERIENCE_AbaqusSolver\Windows64\1\setup.exe}
 	
 	\subsection{CAE}
 	Run the installer
-	\path{\SIMULIA_Abaqus_CAE\Windows64\1\setup.exe}
+	\path{Abaqus2016\SIMULIA_Abaqus_CAE\Windows64\1\setup.exe}
 	
 	Choose Flexnet as the licence type and enter the licence server:\\
 	\texttt{28003@lfarm4.its.manchester.ac.uk}
@@ -98,7 +99,7 @@
 	
 	\section{Post-installation tasks}
 	\subsection{Modify shortcuts to get user subroutines working}
-	To get User Subroutines working with Intel Compiler XE 2011, copy \\ \path{abaqus_set_env.bat} to \path{C:\SIMULIA\} and then modify the Abaqus start menu shortcuts thus:
+	To get User Subroutines working with Intel Compiler XE 2011, copy \\ \path{Abaqus2016\abaqus_set_env.bat} to \path{C:\SIMULIA\} and then modify the Abaqus start menu shortcuts thus:
 	\begin{enumerate}
 		\item Go to the \textbf{Start Menu $\rightarrow$ All Programs $\rightarrow$ Dassault Systemes SIMULIA Abaqus CAE 2016}, right click on \textbf{Abaqus CAE}, then left click on \textbf{properties}
 		\item Copy and paste the below string (everything within, but not including the quote marks) to the very beginning of the \textbf{Target} field. Ensure there is a single space either side of the final ``\textbf{\&\&}''\\

@@ -38,7 +38,7 @@
 	\begin{enumerate}
 		\item Documentation
 		
-			\textbf{Note that installing the documentation is not optional - the solvers won't install unless the documentation has already been installed.}
+			Note that installing the documentation locally is optional. The alternative is to specify \url{http://50.16.225.63/v2016/} during the CAE installation.
 		
 		\item Services (solvers)
 		\item CAA developer
@@ -47,7 +47,8 @@
 
 	It's generally just a process of double-clicking on each setup.exe in turn and accepting the defaults, but some details are given below for key steps. 
 	
-	\subsection{Documentation}
+	\subsection{Documentation (optional)}
+	\label{sec:documentation}
 	Mount the iso file containing the documentation installer \path{Abaqus_fesafe_2016_documentation.iso}
 	Run this installer\\ \path{\1\DOC_SIMULIA_Abaqus_fe-safe\1\Abaqus_2016\setup.exe}\\	
 	Choose HTML and pdf
@@ -90,6 +91,8 @@
 	\includegraphics[width=\textwidth]{"abaqus2016_licence_details_known_bug".png}
 	
 	\vspace{3mm}
+	
+	When prompted to enter a location for the documentation, either enter \url{http://50.16.225.63/v2016/} or the location you made a note of in section \ref{sec:documentation}.
 	
 	\subsubsection{A warning about the working directory}
 	You will be asked to choose a location for the Abaqus working directory. By default, this is \path{C:\temp} and this will be created if it doesn't already exist. If you want to use a different directory, make sure it exists. The text box suggests you can specify a path to be created (by changing the default \path{C:\temp}), however the installer won't create a new directory for you, and Abaqus won't install properly.
